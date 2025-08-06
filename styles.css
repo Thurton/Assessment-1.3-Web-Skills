@@ -15,3 +15,23 @@
         --c-cyan: rgb(42,161,152);
         --c-green: rgb(133,153,0);
       }
+
+      /* Basic page styling */
+body {
+  background-color: var(--c-background-color);
+  color: var(--base-font-color);
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Header & footer */
+header, footer {
+  background-color: var(--c-background-highlights);
+  color: var(--base-font-color);
+}
+
+header h1 {
+  color: var(--c-yellow);
+  text-align: center;
+  font-size: 150%;
+}
