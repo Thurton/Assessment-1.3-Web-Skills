@@ -56,3 +56,43 @@ article h1, article h2, article h3 {
   padding-top: 50px;
 }
 
+
+/* Remove nav bullet points */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+/* Aside colours */
+aside {
+  color: var(--c-green);
+}
+
+aside a {
+  color: var(--c-red);
+}
+
+aside a:hover {
+  color: var(--c-blue);
+}
+
+/* Layout main content and aside */
+main {
+  display: flex;
+}
+
+article {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+}
