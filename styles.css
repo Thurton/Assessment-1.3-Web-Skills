@@ -35,3 +35,24 @@ header h1 {
   text-align: center;
   font-size: 150%;
 }
+
+/* Article links */
+article a {
+  color: var(--c-magenta);
+}
+
+article a:hover {
+  color: var(--c-orange);
+}
+
+/* Borders around subsections */
+article h3, article h3 + p, article h3 + p + p {
+  border: 3px solid var(--c-cyan);
+  padding: 10px;
+}
+
+/* Padding for headings */
+article h1, article h2, article h3 {
+  padding-top: 50px;
+}
+
