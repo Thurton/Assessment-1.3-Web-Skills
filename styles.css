@@ -101,4 +101,15 @@
 
         article h3:first-of-type { margin-top: 20px;}
 
-        
+        /* ===== Stage 7: aside colours ====== */
+        aside {
+            color: var(--c-green);
+        }
+        aside a {
+            color:var(--c-red);
+            text-decoration: underline;
+        }
+
+        aside a:hover {
+            color: var(--c-blue);
+        }
