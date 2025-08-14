@@ -70,6 +70,35 @@
         article a:hover {
             color: var(--c-orange);
         }
+
+        /* ===== Stage 6: subsection borders ====== */
+        article h3,
+        article h3 + p,
+        article h3 + p + p {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+            border: none;
+        } 
+
+
+        article h3 {
+            border-top: 3px solid var(--c-cyan);
+            border-left: 3px solid var(--c-cyan);
+            border-right: 3px solid var(--c-cyan);
+        }
+
+        article h3 + p {
+            border-left: 3px solid var(--c-cyan);
+            border-right: 3px solid var(--c-cyan);
+        }
+
+        article h3 + p + p {
+            border-left: 3px solid var(--c-cyan);
+            border-right: 3px solid var(--c-cyan);
+            border-bottom: 3px solid var(--c-cyan);
+        }
+
+        article h3:first-of-type { margin-top: 20px;}
+
         
-
-
