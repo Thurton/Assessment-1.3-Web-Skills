@@ -62,4 +62,14 @@
         padding: 6px 8px;
       }
 
-      
+      /* ===== Stage 5: article links ====== */
+        article a {
+            color: var(--c-magenta);
+            text-decoration: underline;
+        }
+        article a:hover {
+            color: var(--c-orange);
+        }
+        
+
+
