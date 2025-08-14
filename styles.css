@@ -18,6 +18,7 @@
         --c-green: rgb(133,153,0);
       }
 
+      /* ===== Stage 2: page background & base text ====== */
       body {
         background-color: var(--c-background-color);
         color: var(--base-font-color);
@@ -26,4 +27,20 @@
         line-height: 1.4;
       }
 
-      
+      /* ===== Stage 3: header/footer & header text ====== */
+      header, footer {
+        background-color: var(--c-background-highlights);
+        color: var(--base-font-color);
+      }
+
+      header {
+        text-align: center;
+        padding: 12px 0;
+      }
+
+      header h1 {
+       color: var(--c-yellow);
+       font-size: 150%;
+       margin: 0;
+      }
+    
