@@ -124,3 +124,9 @@
 
         article { grid-column: 1; } 
         aside { grid-column: 2; } 
+
+        /* ===== Stage 9: heading padding ====== */
+        article h2,
+        article h3 {
+            padding-top: 50px;
+         }
