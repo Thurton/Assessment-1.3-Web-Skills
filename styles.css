@@ -130,3 +130,67 @@
         article h3 {
             padding-top: 50px;
          }
+
+         /* ===== JS Task: theme palettes and layout ====== */
+         :root {
+            --primary-color: rgb(255, 255, 255)
+            --secondary-color: rgb(230, 230, 230);
+            --bg-color: rgb(20, 25, 28);
+            --font-color: rgb(230, 230, 230);
+            --heading-color: rgb(181, 137, 0);
+
+         }
+
+         [data-theme="dark"] {
+            --primary-color: rgb(0, 0, 0);
+            --secondary-color: rgb(35, 35, 35);
+            --bg-color: rgb(20, 25, 28);
+            --font-color: rgb(30, 30, 30);
+            --heading-color: rgb(38, 139, 210);
+         }
+
+         html[data-theme="light"] body,
+         html[data-theme="dark"] body {
+            background-color: var(--bg-color);
+            color: var(--font-color);
+         }
+
+         header h1 {
+            color: var(--heading-color);
+         
+          }
+
+          /* Birds page layout */
+          #viewer {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+          }
+          #viewer img {
+            display:block;
+            margin: 0 auto 10px;
+            max-width: 100%;
+            height: auto;
+            border: 3px solid var(--secondary-color);
+          }
+          #viewer p { margin: 0; }
+          
+          #controls, #theme {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 16px 0;
+          } 
+
+          button {
+            padding: 8px 12px;
+            background: var(--secondary-color);
+            border: 1px solid var(--primary-color);
+            color: var(--font-color);
+            cursor: pointer;
+          }
+          button:hover {
+            outline: 2px solid var(--heading-color);
+          }
+          
+            
