@@ -40,3 +40,12 @@ document.getElementById("controls").addEventListener("click", (e) => {
     }
 });
 
+const root = document.documentElement;
+const toggleBtn = document.getElementById("toggle-theme");
+
+toggleBtn.addEventListener("click", () => {
+    const curent = root.getAttribute("data-theme") || 'light';
+    const next = curent === 'light' ? 'dark' : 'light';
+    root.setAttribute("data-theme", next);
+});
+
