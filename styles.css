@@ -113,3 +113,14 @@
         aside a:hover {
             color: var(--c-blue);
         }
+
+        /* ===== Stage 8: main layout (aside right) ====== */
+        main {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) 260px;
+          gap : 20px;
+          align-items: start;
+        }
+
+        article { grid-column: 1; } 
+        aside { grid-column: 2; } 
