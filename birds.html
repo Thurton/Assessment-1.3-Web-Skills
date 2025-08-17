@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Bird selector</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="birds-page" data-theme="light">
   <header>
     <h1>Bird Selector</h1>
   </header>
 
   <main>
     <section id="viewer">
-      <img id="bird-img" src="http://www.outgrabe.net/bird00.jpg" alt="Pardalote">
+      <img id="bird-img" src="http://www.outgrabe.net/bird00.jpg" alt="Pardalote" />
       <p id="credit">Pardalote by fir0002 (CC-by-NC)</p>
     </section>
 
-    <section id="controls">
-      <button data-bird="pardalote">Pardalote</button>
-      <button data-bird="purple">Purple Swamp Hen</button>
-      <button data-bird="stilt">White-headed Stilt</button>
-      <button data-bird="thornbill">Inland Thornbill</button>
-      <button data-bird="robin">Rose Robin</button>
+    <section id="controls" aria-label="Choose a bird">
+      <button class="bird-btn" data-bird="pardalote" aria-pressed="true">Pardalote</button>
+      <button class="bird-btn" data-bird="purple">Purple Swamp Hen</button>
+      <button class="bird-btn" data-bird="stilt">White-headed Stilt</button>
+      <button class="bird-btn" data-bird="thornbill">Inland Thornbill</button>
+      <button class="bird-btn" data-bird="robin">Rose Robin</button>
     </section>
 
     <section id="theme">
-      <button id="toggle-theme">Toggle Theme</button>
+      <button id="toggle-theme" type="button">Toggle Theme</button>
     </section>
   </main>
 
@@ -36,6 +36,7 @@
   <script src="app.js"></script>
 </body>
 </html>
+
 
 
         
